@@ -1,0 +1,18 @@
+chef-server-ctl user-create USER_NAME FIRST_NAME LAST_NAME EMAIL 'PASSWORD' --filename FILE_NAME
+
+chef-server-ctl user-create AdminAdmin Admin Admin rahulgoud599@gmail.com 'Admin@123' --filename Tsk4.pem
+
+chef-server-ctl org-create short_name 'full_organization_name' --association_user user_name --filename ORGANIZATION-validator.pem
+
+chef-server-ctl org-create short_name 'PRG9909' --association_user AdminAdmin --filename Tsk4.pem
+
+
+
+
+
+knife bootstrap ec2-34-224-83-28.compute-1.amazonaws.com
+  --ssh-user ubuntu
+  --sudo
+  --identity-file ./etc/chef/Tsk4.pem
+  --run-list webserver
+                
