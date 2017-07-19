@@ -188,7 +188,7 @@
           "Properties" : {
             "InstanceType" : { "Ref" : "CSInstanceType" },
             "KeyName"  : { "Ref" : "KeyName" },
-            "ImageId"  : "ami-a4c7edb2",
+            "ImageId"  : "ami-9e2f0988",
             "NetworkInterfaces" : [{
               "GroupSet"                 : [{ "Ref" : "InstanceSecurityGroup" }],
               "AssociatePublicIpAddress" : "true",
